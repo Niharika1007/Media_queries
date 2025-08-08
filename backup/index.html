@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">MySite</div>
+    <button id="nav-toggle" aria-label="Open menu">☰</button>
+    <nav id="main-nav" class="nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Responsive design made simple</h1>
+      <p>This is a mobile-first layout that scales up to larger screens.</p>
+    </section>
+
+    <section class="columns">
+      <article class="card">
+        <h2>Card 1</h2>
+        <p>Details about card one.</p>
+      </article>
+      <article class="card">
+        <h2>Card 2</h2>
+        <p>Details about card two.</p>
+      </article>
+      <article class="card">
+        <h2>Card 3</h2>
+        <p>Details about card three.</p>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const btn = document.getElementById('nav-toggle');
+    const nav = document.getElementById('main-nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
